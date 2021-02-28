@@ -15,23 +15,17 @@ namespace Postal_Code_Lookup
             //Introduction Text
             Console.WriteLine("Please enter zip code");
             var zipCode = (Console.ReadLine());
-            
-          
+
+
             //foreach loop to find zipcode and return line
             foreach (var line in myLines)
             {
                 if (line.Contains(zipCode))
-                    {
+                {
                     Console.WriteLine(line);
                 }
-                   
 
-                
             }
-
-
-
-
 
         }
     }
