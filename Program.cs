@@ -12,8 +12,10 @@ namespace Postal_Code_Lookup
             var myLines = File.ReadLines(@"C:\Users\rrman\Documents\USN.txt");
 
             //Introduction Text
-            Console.WriteLine("Please enter zip code");
+            Console.WriteLine("Enter any zip code in the United States");
+            Console.WriteLine();
             var zipCode = (Console.ReadLine());
+            Console.WriteLine("Location information below:");
 
             //foreach loop to find zipcode and return line
             foreach (var line in myLines)
