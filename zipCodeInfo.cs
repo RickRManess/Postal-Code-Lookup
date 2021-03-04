@@ -15,10 +15,9 @@ namespace Postal_Code_Lookup
         public int AdminCodeTwo;
         public string AdminNameThree;
         public int AdminCodeThree;
-        public int Latitude;
-        public int Longitude;
+        public float Latitude;
+        public float Longitude;
         public int Accuracy;
-
 
         
     }

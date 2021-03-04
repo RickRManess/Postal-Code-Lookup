@@ -16,15 +16,28 @@ namespace Postal_Code_Lookup
             Console.WriteLine();
             var zipCode = (Console.ReadLine());
             Console.WriteLine("Location information below:");
+             
+            //initializing new instance of zipcodeinfo class 
+            zipCodeInfo zip = new zipCodeInfo();
 
             //foreach loop to find zipcode and return line
             foreach (var line in myLines)
             {
                 if (line.Contains(zipCode))
                 {
-                    Console.WriteLine(line);
+                    string[] zipInfo = line.Split("\t");
+                    foreach (var part in zipInfo)
+                    {
+                       
+                    }
+  
+                    
                 }
+                        
             }
+
+
         }
+
     }
 }
