@@ -6,6 +6,10 @@ namespace Postal_Code_Lookup
 {
     class zipCodeInfo
     {
+        public override string ToString()
+        {
+            return base.ToString();
+        }
         public string CountryCode;
         public int PostalCode;
         public string PlaceName;

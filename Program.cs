@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -8,36 +9,44 @@ namespace Postal_Code_Lookup
     {
         static void Main(string[] args)
         {
-            //variable created to read postal code text file
-            var myLines = File.ReadLines(@"C:\Users\rrman\Documents\USN.txt");
-
             //Introduction Text
             Console.WriteLine("Enter any zip code in the United States");
             Console.WriteLine();
             var zipCode = (Console.ReadLine());
             Console.WriteLine("Location information below:");
-             
-            //initializing new instance of zipcodeinfo class 
-            zipCodeInfo zip = new zipCodeInfo();
 
-            //foreach loop to find zipcode and return line
-            foreach (var line in myLines)
+
+            //variable created to read postal code text file
+            var myLines = File.ReadLines(@"C:\Users\rrman\Documents\USN.txt");
+            var zipList = new List<zipCodeInfo>();
+
+
+            //foreach loop to split each line into parts 
+            foreach (string line in myLines)
             {
-                if (line.Contains(zipCode))
-                {
-                    string[] zipInfo = line.Split("\t");
-                    foreach (var part in zipInfo)
-                    {
-                       
-                    }
-  
-                    
-                }
-                        
+                string[] part = line.Split("\t");
+                var locationData = new zipCodeInfo();
+                locationData.CountryCode = part[0];
+                locationData.PostalCode = Int32.Parse(part[1]);
+                locationData.PlaceName = part[2];
+                locationData.AdminNameOne = part[3];
+                locationData.AdminCodeOne = Int32.Parse(part[4]);
+                locationData.AdminNameTwo = part[5];
+                locationData.AdminCodeTwo = Int32.Parse(part[6]);
+                locationData.AdminNameThree = part[7];
+                locationData.AdminCodeThree = Int32.Parse(part[8]);
+                locationData.Latitude = Int32.Parse(part[9]);
+                locationData.Longitude = Int32.Parse(part[10]);
+                locationData.Accuracy = Int32.Parse(part[11]);
+                zipList.Add(locationData);
+
             }
-
-
+            
         }
 
     }
+
 }
+
+    
+
