@@ -657,7 +657,7 @@ US	35259	Birmingham	Alabama	AL	Jefferson	073			33.5446	-86.9292	4
 US	35260	Birmingham	Alabama	AL	Jefferson	073			33.5446	-86.9292	4
 US	35261	Birmingham	Alabama	AL	Jefferson	073			33.5446	-86.9292	4
 US	35266	Birmingham	Alabama	AL	Jefferson	073			33.3729	-86.8531	4
-US	35270	Birmingham	Alabama	AL	Jefferson	073			33.5206	-86.8025	
+US	35270	Birmingham	Alabama	AL	Jefferson	073			33.5206	-86.8025	4
 US	35282	Birmingham	Alabama	AL	Jefferson	073			33.5446	-86.9292	4
 US	35283	Birmingham	Alabama	AL	Jefferson	073			33.5207	-86.8025	4
 US	35285	Birmingham	Alabama	AL	Jefferson	073			33.5446	-86.9292	4
@@ -1628,8 +1628,6 @@ US	72222	Little Rock	Arkansas	AR	Pulaski	119			34.7519	-92.3925	4
 US	72223	Little Rock	Arkansas	AR	Pulaski	119			34.7902	-92.5044	4
 US	72225	Little Rock	Arkansas	AR	Pulaski	119			34.7519	-92.3925	4
 US	72227	Little Rock	Arkansas	AR	Pulaski	119			34.7757	-92.3724	4
-US	72231	Little Rock	Arkansas	AR	Pulaski	119			34.8019	-92.1894	4
-US	72255	Little Rock	Arkansas	AR	Pulaski	119			34.7464	-92.2894	
 US	72295	Little Rock	Arkansas	AR	Pulaski	119			34.7519	-92.3925	4
 US	72413	Biggers	Arkansas	AR	Randolph	121			36.2844	-90.8538	4
 US	72444	Maynard	Arkansas	AR	Randolph	121			36.4386	-90.8749	4

@@ -6,23 +6,23 @@ namespace Postal_Code_Lookup
 {
     class zipCodeInfo
     {
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        
         public string CountryCode;
         public int PostalCode;
         public string PlaceName;
         public string AdminNameOne;
-        public int AdminCodeOne;
+        public string AdminCodeOne;
         public string AdminNameTwo;
-        public int AdminCodeTwo;
+        public string AdminCodeTwo;
         public string AdminNameThree;
-        public int AdminCodeThree;
+        public string AdminCodeThree;
         public float Latitude;
         public float Longitude;
         public int Accuracy;
 
-        
+        }
     }
-}
+
+
+
+
