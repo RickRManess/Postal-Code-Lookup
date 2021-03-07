@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Postal_Code_Lookup
 {
-    class zipCodeInfo
+    class ZipCodeInfo
     {
-        
+
         public string CountryCode;
         public int PostalCode;
         public string PlaceName;
@@ -20,8 +20,15 @@ namespace Postal_Code_Lookup
         public float Longitude;
         public int Accuracy;
 
+        public override string ToString()
+        {
+            return $"{PostalCode} - {PlaceName}";
         }
+
     }
+
+
+}
 
 
 
