@@ -55,8 +55,8 @@ namespace Postal_Code_Lookup
             {
                 if (zipCodeToLookup == zI.PostalCode)
                 {
-                    Console.WriteLine(zI.PlaceName);
-                    Console.WriteLine(zI.AdminNameOne);
+                    Console.WriteLine("City: " + zI.PlaceName);
+                    Console.WriteLine("State: " + zI.AdminNameOne);
                     break;
                 }
             }
