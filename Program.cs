@@ -40,7 +40,6 @@ namespace Postal_Code_Lookup
             var myLines = File.ReadLines(@"../../../USZipCodes.txt");
             var zipList = new List<ZipCodeInfo>();
 
-
             //foreach loop to split each line into parts 
             foreach (string line in myLines)
             {
@@ -75,16 +74,19 @@ namespace Postal_Code_Lookup
                 {
                     Console.WriteLine("City: " + zI.PlaceName);
                     Console.WriteLine("State: " + zI.AdminNameOne);
+                    Console.WriteLine("County: " + zI.AdminNameTwo);
                     break;
                 }
             }
-
-        }
+        }/// <summary>
+        /// Produces Text to prompt user for input
+        /// </summary>
         static void DisplayWelcomeScreen()
         {
             Console.WriteLine("Enter any zip code in the United States");
             Console.WriteLine();
         }
+
 
     }
 }
