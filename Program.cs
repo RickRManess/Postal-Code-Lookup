@@ -18,6 +18,7 @@ namespace Postal_Code_Lookup
                 try
                 {
                     //Function for introduction text 
+                    Console.Clear();
                     DisplayWelcomeScreen();
                     //User input for zipcodelookup 
                     zipCodeToLookup = Int32.Parse(Console.ReadLine());
@@ -25,10 +26,13 @@ namespace Postal_Code_Lookup
                 }
                 catch (Exception zipError)
                 {
+
                     Console.WriteLine("Invalid Format Try Again");
-                    
+                    if (Console.ReadKey().Key == ConsoleKey.Enter)
+                    {
+
+                    }
                 }
-                
             }
             while (zipCodeToLookup == 0);
 
