@@ -9,25 +9,28 @@ namespace Postal_Code_Lookup
     {
         static void Main(string[] args)
         {
-            //Introduction Text
-            Console.WriteLine("Enter any zip code in the United States");
-            Console.WriteLine();
-
-            //User input for zipcode to search for
+            
+            // Initializing variable outside of try catch loop
             int zipCodeToLookup = 0;
-            try
-            {
-                zipCodeToLookup = Int32.Parse(Console.ReadLine());
-                Console.WriteLine("Location information below:");
-            }
-            catch (Exception zipError)
-            {
-                Console.WriteLine("Invalid Format Try Again");
-                zipCodeToLookup = Int32.Parse(Console.ReadLine());
-                Console.WriteLine("Location information below:");
 
+            do
+            {
+                try
+                {
+                    //Function for introduction text 
+                    DisplayWelcomeScreen();
+                    //User input for zipcodelookup 
+                    zipCodeToLookup = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Location information below:");
+                }
+                catch (Exception zipError)
+                {
+                    Console.WriteLine("Invalid Format Try Again");
+                    
+                }
+                
             }
-          
+            while (zipCodeToLookup == 0);
 
             //variable created to read postal code text file
             var myLines = File.ReadLines(@"../../../USZipCodes.txt");
@@ -72,6 +75,11 @@ namespace Postal_Code_Lookup
                 }
             }
 
+        }
+        static void DisplayWelcomeScreen()
+        {
+            Console.WriteLine("Enter any zip code in the United States");
+            Console.WriteLine();
         }
 
     }
