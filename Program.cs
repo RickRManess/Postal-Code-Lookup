@@ -14,9 +14,20 @@ namespace Postal_Code_Lookup
             Console.WriteLine();
 
             //User input for zipcode to search for
-            int zipCodeToLookup = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Location information below:");
+            int zipCodeToLookup = 0;
+            try
+            {
+                zipCodeToLookup = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Location information below:");
+            }
+            catch (Exception zipError)
+            {
+                Console.WriteLine("Invalid Format Try Again");
+                zipCodeToLookup = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Location information below:");
 
+            }
+          
 
             //variable created to read postal code text file
             var myLines = File.ReadLines(@"../../../USZipCodes.txt");
